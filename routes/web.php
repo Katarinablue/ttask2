@@ -14,7 +14,7 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-route::get('/fawas', [UserController::class, 'index']);
+route::get('/amar', [UserController::class, 'index']);
