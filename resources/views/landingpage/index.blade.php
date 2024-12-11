@@ -1,95 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Photographer | Responsive Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans text-gray-800">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TOKO RAFIQ</title>
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Feather Icons -->
-  <script src="https://unpkg.com/feather-icons"></script>
-</head>
-
-<body class="font-poppins bg-gray-100 text-gray-900">
-
-  <!-- Navbar start -->
-  <nav class="bg-white shadow-md fixed top-0 w-full z-10">
-    <div class="container mx-auto flex items-center justify-between px-4 py-4">
-      <a href="#" class="text-2xl font-bold text-black">Toko<span class="text-blue-900">Rafiq</span>.</a>
-
-      <div class="hidden md:flex space-x-6">
-        <a href="#home" class="text-black hover:text-blue-900">Home</a>
-        <a href="#about" class="text-black hover:text-blue-900">Tentang Kami</a>
-        <a href="#menu" class="text-black hover:text-blue-900">Menu</a>
-        <a href="#products" class="text-black hover:text-blue-900">Produk</a>
-        <a href="#contact" class="text-black hover:text-blue-900">Kontak</a>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed top-0 w-full z-50">
+      <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+        <div class="text-lg font-bold"><a href="#">Azka Amar</a></div>
+        <input type="checkbox" id="check" class="hidden" />
+        <label for="check" class="cursor-pointer md:hidden">
+          <i class="ri-menu-line text-2xl"></i>
+        </label>
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-500">About</a></li>
+          <li><a href="#resume" class="hover:text-blue-500">Skill</a></li>
+          <li><a href="#portfolio" class="hover:text-blue-500">Portfolio</a></li>
+          <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
       </div>
+    </nav>
 
-      <div class="flex space-x-4">
-        <a href="#" id="search-button" class="text-black"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart-button" class="text-black"><i data-feather="shopping-cart"></i></a>
-        <a href="#" id="hamburger-menu" class="md:hidden text-black"><i data-feather="menu"></i></a>
-      </div>
-    </div>
-  </nav>
-  <!-- Navbar end -->
-
-  <!-- Hero Section start -->
-  <section id="home" class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('hero-background.jpg');">
-    <div class="text-center text-gray-900">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Selamat Datang di Toko <span class="text-blue-900">Rafiq</span></h1>
-      <p class="text-lg md:text-xl">Silahkan Berbelanja Dengan Nyaman.</p>
-    </div>
-  </section>
-  <!-- Hero Section end -->
-
-  <!-- About Section start -->
-  <section id="about" class="py-16 bg-gray-100">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8"><span class="text-blue-900">Tentang</span> Kami</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="flex justify-center">
-          <img src="aset/ecommerce.jpg" alt="Tentang Kami" class="rounded-lg shadow-md">
+    <!-- Home Section -->
+    <section id="home" class="pt-20 min-h-screen bg-gray-50 flex items-center">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 text-center md:text-left space-y-4">
+          <p class="text-xl text-blue-500 font-semibold">HALO</p>
+          <h1 class="text-4xl font-bold">
+            Saya <span class="text-blue-500">Azka Amar</span><br />
+            adalah seorang <span class="text-blue-500">Photographer</span>
+          </h1>
+          <p class="text-gray-700 leading-relaxed">
+            Selamat datang di website saya. Setiap proyek yang saya ambil adalah kesempatan untuk bercerita melalui gambar. Portofolio ini menampilkan berbagai karya saya yang mencerminkan dedikasi saya terhadap seni fotografi dan kepuasan klien.
+          </p>
         </div>
-        <div class="flex flex-col justify-center space-y-4 text-left">
-          <h3 class="text-xl font-semibold text-black">Kenapa memilih Toko Kami?</h3>
-          <p class="text-black">Terima Kasih Telah Memilih Toko Kami!</p>
-          <p class="text-black">Semoga Kalian Dilimphkan Berkah Yang Banyak.</p>
+        <div class="md:w-1/2 mt-6 md:mt-0">
+          <img src="89268ba496c2f64ac14e055b97cc2ae9.jpg" alt="profile" class="rounded-lg shadow-md w-full" />
         </div>
       </div>
-    </div>
-  </section>
-  <!-- About Section end -->
+    </section>
 
-  <!-- Menu Section start -->
-  <section id="menu" class="py-16 bg-white">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8"><span class="text-blue-900">Menu</span> Kami</h2>
-      <p class="mb-8 text-black">Menu Gaming.</p>
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Card Example -->
-        <div class="bg-gray-100 p-4 rounded-lg shadow-md">
-          <img src="aset/Razer-Basilisk-V3_20220426-124554_full.jpg" alt="Mouse" class="w-full h-40 object-cover rounded-md">
-          <h3 class="mt-4 text-lg font-bold text-black">Mouse</h3>
-          <p class="text-gray-600">IDR 500K</p>
-          <a href="https://wa.me/6282326352497" target="_blank" class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-md">
-            <i data-feather="whatsapp"></i> Pesan Sekarang
-          </a>
-        </div>
-        <!-- Repeat similar structure for other cards -->
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-6">About Me</h2>
+        <p class="text-gray-700 leading-relaxed text-center">
+          Saya adalah seorang fotografer profesional yang mengkhususkan diri dalam menangkap momen-momen berharga dan menjadikannya abadi. Dengan pengalaman bertahun-tahun di berbagai bidang fotografi, saya memiliki kemampuan untuk bercerita melalui lensa kamera.
+        </p>
       </div>
-    </div>
-  </section>
-  <!-- Menu Section end -->
+    </section>
 
-  <!-- Feather Icons -->
-  <script>
-    feather.replace();
-  </script>
-</body>
+    <!-- Skill Section -->
+    <section id="resume" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-6">Skill</h2>
+        <ul class="space-y-6">
+          <li>
+            <h3 class="text-xl font-semibold">Fotografi Potret:</h3>
+            <p class="text-gray-700">Mengabadikan karakter dan kepribadian melalui gambar.</p>
+          </li>
+          <li>
+            <h3 class="text-xl font-semibold">Fotografi Perjalanan:</h3>
+            <p class="text-gray-700">Menangkap keindahan dan budaya dari berbagai belahan dunia.</p>
+          </li>
+          <li>
+            <h3 class="text-xl font-semibold">Fotografi Pernikahan:</h3>
+            <p class="text-gray-700">Mendokumentasikan cinta dan emosi dalam setiap detik yang berharga.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-6">Portfolio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+            <img src="7c9ea8dbe755d612cf0d0293a1876e1c.jpg" alt="Project 1" class="w-full h-56 object-cover" />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Akad Nikah</h3>
+              <p class="text-gray-700">Memfoto pengantin Pria</p>
+            </div>
+          </div>
+          <!-- Tambahkan item lain sesuai struktur di atas -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Contact</h2>
+        <p class="text-gray-700 mb-6">Feel free to contact me through the form below.</p>
+        <form class="space-y-4">
+          <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-md" required />
+          <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-md" required />
+          <textarea placeholder="Your Message" class="w-full p-3 border rounded-md" required></textarea>
+          <button type="submit" class="px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </body>
 </html>
